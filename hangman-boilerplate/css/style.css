@@ -8,3 +8,17 @@ figure.head     svg #head      { opacity: 1; }
 figure.body     svg #body      { opacity: 1; }
 figure.arms     svg #arms      { opacity: 1; }
 figure.legs     svg #legs      { opacity: 1; }
+
+
+
+.word {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+    gap: 1rem;
+}
+
+.word li {
+    background-color: hotpink;
+}

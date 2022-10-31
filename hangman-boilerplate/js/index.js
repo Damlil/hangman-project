@@ -37,7 +37,7 @@ startGame.addEventListener('click', () => {
     
     randomCountry.push(generateCountry)
 
-   displayRandom()
+
 
     displayCountry.innerHTML = generateCountry
     
@@ -51,10 +51,22 @@ resetBtn.addEventListener('click', () => {
 }
 )
 
-
-
+let word = 'hkjdgdfrgerfd';
+let wordArr = []
 
     //  1.   With a loop Check how many letters the random generated word contains.
+
+    for(let i = 0; i < word.length; i++){
+        wordArr.push(word[i])
+    }
+    console.log(wordArr)
+
+
+    for(let i = 0; i<wordArr.length; i++){
+        let el = `<li>${wordArr[i]}</li>`
+        document.querySelector('.word').insertAdjacentHTML('beforeend', el)
+    }
+
     //  2.   Based on how many letters word contains,  replace them with undescores  ( _ )
     //  3.   
 
