@@ -10,6 +10,7 @@
 const startGame = document.querySelector('.startBtn')
 const resetBtn = document.querySelector('.resetGame')
 const displayCountry = document.querySelector('h1')
+const j="js"
 
 
 let countries = [
