@@ -25,6 +25,7 @@ let countries = [
     'india'
 ]
 let randomCountry = []
+let keys = 'abcdefghijklmnopqrst'
 
 startGame.addEventListener('click', () => {
         
@@ -32,17 +33,28 @@ startGame.addEventListener('click', () => {
                 return
             }
     let generateCountry = countries[Math.floor(Math.random() * countries.length)];
-    console.log(generateCountry);
+    
     randomCountry.push(generateCountry)
+
+   displayRandom()
+
     displayCountry.innerHTML = generateCountry
     
 
 })
 
+resetBtn.addEventListener('click', () => { 
+    
+    randomCountry = []
+
+}
+)
 
 
-resetBtn.addEventListener('click', () => {
-        
-randomCountry = []
 
-})
+
+    //  1.   With a loop Check how many letters the random generated word contains.
+    //  2.   Based on how many letters word contains,  replace them with undescores  ( _ )
+    //  3.   
+
+
